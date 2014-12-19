@@ -116,11 +116,11 @@ def checkWaterTemp(x=None):
 		temp = subprocess.Popen(["Temps/WaterTemp1.sh"], stdout=subprocess.PIPE, shell=True)
 		output, err = temp.communicate() #converts output to string
 		output = float(output) #converts string output to float output
-	if x == 2:
+	elif x == 2:
 		temp = subprocess.Popen(["Temps/WaterTemp2.sh"], stdout=subprocess.PIPE, shell=True)
 		output, err = temp.communicate() #converts output to string
 		output = float(output) #converts string output to float output
-	if x == None:
+	elif x == None:
 		temp1 = subprocess.Popen(["Temps/WaterTemp1.sh"], stdout=subprocess.PIPE, shell=True)
 		output1, err = temp1.communicate() #converts output to string
 		output1 = float(output1) #converts string output to float output
@@ -148,7 +148,7 @@ def WaterTempNotify(temp=None, waterAlarmCondition=None):
 	if temp == None:
 		print 'No temp variable being passed'
 		return None
-	if temp > 74 and waterWarning == 0:
+	elif temp > 74 and waterWarning == 0:
 		p.add('GCB', 'Warning: Water Temp is ' + str(temp) + 'F', 'WARNING', 2)
 		waterWarning = 1
 	if waterWarning == 1 and temp < 70:
