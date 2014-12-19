@@ -46,14 +46,14 @@ while True:
 		p.add('GCB', 'Air Temp is {:.4}'.format(checkAirTemp())+configSet('temp'), 'WARNING', 2)
 		tempAlarm = 1
 		
-	if checkAirTemp() < int(configSet('lowTemp')) and tempAlarm == 1:
+	elif checkAirTemp() < int(configSet('lowTemp')) and tempAlarm == 1:
 		p.add('GCB', 'Air Temp is {:.4}'.format(checkAirTemp())+configSet('temp'), 'Notification', 0)
 		tempAlarm = 0
 	
 	if GPIO.readPin(configSet('lightspin')) == 1 and tank == 1:
 		if GPIO.readPin(configSet('fanpin')) == 1:
 			GPIO.writePin(configSet('co2pin'), 1)
-		if GPIO.readPin(configSet('fanpin')) == 0:
+		elif GPIO.readPin(configSet('fanpin')) == 0:
 			GPIO.writePin(configSet('co2pin'), 0)
 	else:
 		GPIO.writePin(configSet('co2pin'), 1)
@@ -67,7 +67,7 @@ while True:
 		waterTemp = str(waterTemp)
 		p.add('GCB', 'Warning: Water Temp is ' + waterTemp + 'F', 'WARNING', 2)
 		waterWarning = 1
-	if waterWarning == 1 and waterTemp < 70:
+	elif waterWarning == 1 and waterTemp < 70:
 		waterTemp = str(waterTemp)
 		p.add('GCB', 'Water Temp is ' + waterTemp + 'F', 'Notification', 0)
 		waterWarning = 0		
