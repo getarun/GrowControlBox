@@ -1,0 +1,38 @@
+<configData>
+	<localization>
+		<units>
+			<temp>F</temp>
+		</units>
+	</localization>
+	
+	<pins>
+		<lightspin>1</lightspin>
+		<fanpin>2</fanpin>
+		<co2pin>3</co2pin>
+	</pins>
+	
+	<events>
+		<exhaustTime>15</exhaustTime>
+		<exhaustDuration>2</exhaustDuration>
+		<airTemps>
+			<hiTemp>78</hiTemp>
+			<lowTemp>76</lowTemp>
+			<hiTempAlarm>80</hiTempAlarm>
+		</airTemps>
+		
+		<CO2>
+			<co2Hi>1500</co2Hi>
+			<co2Low>1400</co2Low>
+			<co2Alarm>600</co2Alarm>
+		</CO2>
+	</events>
+	
+	<APIkeys>
+		<prowlkey>6c3e99f97192f34dfc540b4412860c5047bba049</prowlkey>
+		
+		<Xively>
+			<XivFeedID>1689559581</XivFeedID>
+			<XivAPIkey>KwFd4c3WbpRLCnmrB9iKbRZW3iGJWpHteCWp9NPqaCLMhGsJ</XivAPIkey>
+		</Xively>
+	</APIkeys>
+</configData>
