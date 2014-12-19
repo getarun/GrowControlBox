@@ -29,11 +29,11 @@ def checkAirTemp(x=None):
 		temp = subprocess.Popen(["Temps/AirTemp1.sh"], stdout=subprocess.PIPE, shell=True)
 		output, err = temp.communicate() #converts output to string
 		output = float(output) #converts string output to float output
-	if x == 2:
+	elif x == 2:
 		temp = subprocess.Popen(["Temps/AirTemp2.sh"], stdout=subprocess.PIPE, shell=True)
 		output, err = temp.communicate() #converts output to string
 		output = float(output) #converts string output to float output
-	if x == None:
+	elif x == None:
 		temp1 = subprocess.Popen(["Temps/AirTemp1.sh"], stdout=subprocess.PIPE, shell=True)
 		output1, err = temp1.communicate() #converts output to string
 		output1 = float(output1) #converts string output to float output
