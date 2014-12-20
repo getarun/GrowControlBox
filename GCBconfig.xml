@@ -32,11 +32,11 @@
 	</events>
 	
 	<APIkeys>
-		<prowlkey>6c3e99f97192f34dfc540b4412860c5047bba049</prowlkey>
+		<prowlkey></prowlkey>
 		
 		<Xively>
-			<XivFeedID>1689559581</XivFeedID>
-			<XivAPIkey>KwFd4c3WbpRLCnmrB9iKbRZW3iGJWpHteCWp9NPqaCLMhGsJ</XivAPIkey>
+			<XivFeedID></XivFeedID>
+			<XivAPIkey></XivAPIkey>
 		</Xively>
 	</APIkeys>
 </configData>
