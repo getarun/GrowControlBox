@@ -23,6 +23,7 @@
 			<waterHiTemp>74</waterHiTemp>
 			<waterLoTemp>70</waterLoTemp>
 			<waterTempAlarm></waterTempAlarm>
+		</waterTemps>
 		<CO2>
 			<co2Hi>1500</co2Hi>
 			<co2Low>1400</co2Low>
