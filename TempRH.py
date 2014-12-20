@@ -148,10 +148,10 @@ def WaterTempNotify(temp=None, waterAlarmCondition=None):
 	if temp == None:
 		print 'No temp variable being passed'
 		return None
-	elif temp > 74 and waterWarning == 0:
+	elif temp > configSet('waterHiTemp') and waterWarning == 0:
 		p.add('GCB', 'Warning: Water Temp is ' + str(temp) + 'F', 'WARNING', 2)
 		waterWarning = 1
-	if waterWarning == 1 and temp < 70:
+	if waterWarning == 1 and temp < configSet('waterLoTemp'):
 		p.add('GCB', 'Water Temp is ' + str(temp) + 'F', 'Notification', 0)
 		waterWarning = 0	
 
