@@ -12,10 +12,10 @@ import datetime
 import requests
 import GPIO
 import pinConfig
-import Setup
+from config import configSet
 
 # initialize api client
-api = xively.XivelyAPIClient(Setup.XivAPIkey)
+api = xively.XivelyAPIClient(configSet('XivAPIkey'))
 
 # function to read the temperature from ds18b20 temperature sensor on i2c 
 def read_temperatureAirTemp():
@@ -47,7 +47,7 @@ def get_datastreamLights(feed):
 # main program entry point - runs continuously updating our datastream with the
 # latest temperature reading
 def run():
-  feed = api.feeds.get(Setup.XivFeedID)
+  feed = api.feeds.get(configSet('XivFeedID'))
 
   datastreamAirTemp = get_datastreamAirTemp(feed)
   datastreamAirTemp.max_value = None
