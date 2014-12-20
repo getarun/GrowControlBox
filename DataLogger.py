@@ -19,7 +19,7 @@ api = xively.XivelyAPIClient(configSet('XivAPIkey'))
 
 # function to read the temperature from ds18b20 temperature sensor on i2c 
 def read_temperatureAirTemp():
-	temp = subprocess.Popen(["./checkAirTemp.sh"], stdout=subprocess.PIPE, shell=True)
+	temp = subprocess.Popen(["Temps/AirTemp1.sh"], stdout=subprocess.PIPE, shell=True)
 	output, err = temp.communicate() #converts output to string
 	output = float(output) #converts string output to float output
 	temp = (output/1000) * 1.8 + 32
