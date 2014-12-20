@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 # Checks Temp/Humidity and returns values #
 ##############
 import os
