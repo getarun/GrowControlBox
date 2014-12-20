@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+###This is for Xively ONLY. MySQL currently happens in TempRH.py###
+
 import os
 import xively
 import subprocess
