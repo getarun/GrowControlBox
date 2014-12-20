@@ -12,7 +12,7 @@ This code is in NO WAY finished, and will be added to, refined, and re-written o
 First Upload of files!
 TempRH.py is where all the action is happening right now. I have started to work on this again.
 
-You will need a relay board, and some DS18B20 temp sensors. I prefer to get the ones already in a stainless steel water proof casing. 
+You will need a relay board, and some DS18B20 temp sensors. I prefer to get the ones already in a stainless steel water proof casing. You will also need WiringPi installed. I might be missing a couple things. :)
 
 http://www.dx.com/p/water-proof-ds18b20-temperature-probe-90cm-142889?tc=USD&gclid=Cj0KEQiAts-kBRCbgrXc1rnXw7MBEiQAnFqTdtneZckqme3T_G0pRTd6P3UwSTFmW1I9DzF1SMF-WrsaAt8F8P8HAQ
 
