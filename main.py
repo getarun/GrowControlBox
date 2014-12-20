@@ -6,9 +6,12 @@ from config import configSet
 from initialize import initGCB
 from TempRH import checkAirTemp, checkWaterTemp
 
+<<<<<<< HEAD
 ###THIS IS OUTDATED, MOST HAS BEEN MOVED INTO TempRH.py to compartmentalize functions###
 
 
+=======
+>>>>>>> 12aec97185583ccf927c140ad3c523fb7f40ba4d
 ###assign variables###
 p = prowlpy.Prowl(configSet('prowlkey'))
 waterWarning = 0
