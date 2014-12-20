@@ -10,14 +10,17 @@ GrowControlBox, aka GCB, is a Raspberry Pi, Python, powered system, to offer mod
 This code is in NO WAY finished, and will be added to, refined, and re-written over the next few years.
 
 First Upload of files!
+
 TempRH.py is where all the action is happening right now. I have started to work on this again.
 
-You will need a relay board, and some DS18B20 temp sensors. I prefer to get the ones already in a stainless steel water proof casing. You will also need WiringPi installed. I might be missing a couple things. :) Update the Temps/*.sh files with your sensor ID's.
-I have left mine in there for reference. This will not work without changing them. Currently written to use 4 sensors. You may edit and comment out the code for the other sensors you are not using. 
+You will need a relay board, and some DS18B20 temp sensors. I prefer to get the ones already in a stainless steel water proof casing. You will also need WiringPi installed. I might be missing a couple things. :)
+
+Update the Temps/*.sh files with your sensor ID's. I have left mine in there for reference. This will not work without changing them. Currently written to use 4 sensors. You may edit and comment out the code for the other sensors you are not using. 
 
 http://www.dx.com/p/water-proof-ds18b20-temperature-probe-90cm-142889?tc=USD&gclid=Cj0KEQiAts-kBRCbgrXc1rnXw7MBEiQAnFqTdtneZckqme3T_G0pRTd6P3UwSTFmW1I9DzF1SMF-WrsaAt8F8P8HAQ
 
 http://www.sainsmart.com/8-channel-dc-5v-relay-module-for-arduino-pic-arm-dsp-avr-msp430-ttl-logic.html?kpid=17_en&gclid=Cj0KEQiAts-kBRCbgrXc1rnXw7MBEiQAnFqTdvQ6DdkDMH8_CfjXrlUMi3Cv7YbUcKpausS-pfReix4aAhD48P8HAQ
+
 
 www.xively.com -- DataLogger.py
 http://wiringpi.com/download-and-install/ -- WiringPi
